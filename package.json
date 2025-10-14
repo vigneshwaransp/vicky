@@ -1,5 +1,6 @@
 {
       "name": "Cyberpunk Portfolio Website",
+      "homepage": "https://vigneshwaransp.github.io/vicky",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -51,10 +52,13 @@
       "devDependencies": {
             "@types/node": "^20.10.0",
             "@vitejs/plugin-react-swc": "^3.10.2",
+            "gh-pages": "^6.3.0",
             "vite": "^6.3.6"
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "preview": "vite preview",
+            "deploy": "gh-pages -d dist"
       }
 }
