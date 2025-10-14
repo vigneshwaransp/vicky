@@ -1,0 +1,60 @@
+# ----------------------------
+# 🌟 Vite + React + TypeScript + Node
+# ----------------------------
+
+# Node dependencies
+node_modules/
+
+# Vite build outputs
+dist/
+build/
+
+# Vite cache and temp files
+.vite/
+.cache/
+vite.config.js.timestamp-*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables (keep secrets safe)
+.env
+.env.local
+.env.*.local
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+Icon?
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Lock files (optional — if you only use one package manager)
+# Uncomment the ones you don’t use
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# ----------------------------
+# 🧠 GitHub Pages
+# ----------------------------
+# gh-pages deployment folder (if you use gh-pages)
+gh-pages/
+.deploy/
