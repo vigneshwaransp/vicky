@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ExternalLink, Github, Zap } from 'lucide-react';
 
 interface Project {
@@ -7,52 +7,30 @@ interface Project {
   tech: string[];
   year: string;
   status: 'active' | 'completed';
+  url?: string;  // optional URL
 }
 
 export function Projects() {
   const projects: Project[] = [
     {
       title: 'Z.I.A (Chat Bot)',
-      description: 'AI chatbot project combining Python and Machine Learning to simulate human interaction with data-driven responses and natural language processing.',
+      description:
+        'AI chatbot project combining Python and Machine Learning to simulate human interaction with data-driven responses and natural language processing.',
       tech: ['Python', 'Machine Learning', 'NLP', 'AI'],
       year: '2024',
       status: 'completed',
+      url: 'https://vigneshwaransp.github.io/Z.I.A/',
     },
     {
-      title: 'Portfolio Website 2050',
-      description: 'Futuristic cyberpunk-themed portfolio with holographic effects, GSAP animations, and neon aesthetics set in the year 2050.',
+      title: 'Spider verse UI',
+      description:
+        'Futuristic cyberpunk-themed portfolio with holographic effects, GSAP animations, and neon aesthetics set in the year 2050.',
       tech: ['React', 'TailwindCSS', 'GSAP', 'Framer Motion'],
       year: '2025',
       status: 'active',
+      // no URL (or you may add one later)
     },
-    {
-      title: 'Neural Network Visualizer',
-      description: 'Interactive web application to visualize neural network architectures and training processes in real-time.',
-      tech: ['Python', 'TensorFlow', 'JavaScript', 'D3.js'],
-      year: '2024',
-      status: 'active',
-    },
-    {
-      title: 'Database Management System',
-      description: 'Custom DBMS implementation with MySQL integration for efficient data storage and retrieval operations.',
-      tech: ['MySQL', 'Python', 'SQL', 'Backend'],
-      year: '2024',
-      status: 'completed',
-    },
-    {
-      title: 'Algorithm Visualizer',
-      description: 'Educational tool for visualizing sorting and searching algorithms with step-by-step execution and performance metrics.',
-      tech: ['Java', 'DSA', 'JavaFX', 'Algorithms'],
-      year: '2024',
-      status: 'completed',
-    },
-    {
-      title: 'UI/UX Design Portfolio',
-      description: 'Collection of modern UI/UX designs created with Figma, featuring mobile apps, web interfaces, and 3D elements.',
-      tech: ['Figma', 'Blender', 'Adobe XD', 'Design'],
-      year: '2025',
-      status: 'active',
-    },
+    
   ];
 
   return (
@@ -65,7 +43,7 @@ export function Projects() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <motion.div 
+          <motion.div
             className="text-[#00BFFF] font-['Share_Tech_Mono'] mb-4 tracking-wider"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +52,7 @@ export function Projects() {
           >
             {'> ACCESSING PROJECT DATABASE...'}
           </motion.div>
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-6xl glow-blue text-[#00BFFF]"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -90,22 +68,33 @@ export function Projects() {
             const isBlue = index % 2 === 0;
             const accentColor = isBlue ? '#00BFFF' : '#FF0033';
 
+            // If project.url exists, wrap in <motion.a>, else just <motion.div>
+            const Container = project.url ? motion.a : motion.div;
+            const containerProps: any = project.url
+              ? {
+                  href: project.url,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                }
+              : {};
+
             return (
-              <motion.div
+              <Container
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="holographic p-6 space-y-4 group cursor-pointer"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.03,
                   boxShadow: `0 0 30px ${accentColor}40`,
                 }}
+                {...containerProps}
               >
                 {/* Header */}
                 <div className="flex items-start justify-between">
-                  <div 
+                  <div
                     className="w-12 h-12 rounded-lg flex items-center justify-center"
                     style={{
                       backgroundColor: `${accentColor}20`,
@@ -113,7 +102,7 @@ export function Projects() {
                       boxShadow: `0 0 15px ${accentColor}40`,
                     }}
                   >
-                    <Zap 
+                    <Zap
                       className="w-6 h-6"
                       style={{ color: accentColor }}
                     />
@@ -131,7 +120,7 @@ export function Projects() {
                 </div>
 
                 {/* Title */}
-                <h3 
+                <h3
                   className="text-xl group-hover:glow-blue transition-all"
                   style={{ color: accentColor }}
                 >
@@ -162,7 +151,7 @@ export function Projects() {
 
                 {/* Footer */}
                 <div className="flex items-center justify-between pt-4 border-t border-gray-800">
-                  <span 
+                  <span
                     className="text-sm font-['Share_Tech_Mono']"
                     style={{ color: accentColor }}
                   >
@@ -174,7 +163,7 @@ export function Projects() {
                       whileTap={{ scale: 0.9 }}
                       className="opacity-70 hover:opacity-100 transition-opacity"
                     >
-                      <Github 
+                      <Github
                         className="w-5 h-5"
                         style={{ color: accentColor }}
                       />
@@ -184,7 +173,7 @@ export function Projects() {
                       whileTap={{ scale: 0.9 }}
                       className="opacity-70 hover:opacity-100 transition-opacity"
                     >
-                      <ExternalLink 
+                      <ExternalLink
                         className="w-5 h-5"
                         style={{ color: accentColor }}
                       />
@@ -200,7 +189,7 @@ export function Projects() {
                     boxShadow: `0 0 10px ${accentColor}`,
                   }}
                 />
-              </motion.div>
+              </Container>
             );
           })}
         </div>
@@ -215,7 +204,7 @@ export function Projects() {
         >
           <motion.button
             className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF]/10 transition-all font-['Share_Tech_Mono']"
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               boxShadow: '0 0 30px rgba(0, 191, 255, 0.4)',
             }}

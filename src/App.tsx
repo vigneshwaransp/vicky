@@ -13,7 +13,7 @@ export default function App() {
   useEffect(() => {
     // Hide default cursor
     document.body.style.cursor = 'none';
-    
+
     return () => {
       document.body.style.cursor = 'auto';
     };
@@ -23,7 +23,7 @@ export default function App() {
     <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
       <BackgroundEffects />
       <CustomCursor />
-      
+
       {/* Main content */}
       <div className="relative z-10">
         <Hero />
