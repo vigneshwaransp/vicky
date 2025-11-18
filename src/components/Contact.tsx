@@ -33,7 +33,7 @@ export function Contact() {
 
   const socialLinks = [
     { icon: Github, label: 'GitHub', color: '#00BFFF', url: 'https://github.com/vigneshwaransp' },
-    { icon: Linkedin, label: 'LinkedIn', color: '#FF0033', url: 'https://www.linkedin.com/in/your-linkedin-username' },
+    { icon: Linkedin, label: 'LinkedIn', color: '#FF0033', url: 'https://www.linkedin.com/in/vgvicky' },
     { icon: LeetCodeIcon, label: 'LeetCode', color: '#FFA116', url: 'https://leetcode.com/u/vigneshwaransp/' },
   ];
 
