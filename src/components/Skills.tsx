@@ -16,22 +16,20 @@ export function Skills() {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const skills: Skill[] = [
-    { name: 'C Programming', level: 85, category: 'programming' },
-    { name: 'C++', level: 82, category: 'programming' },
-    { name: 'Java', level: 80, category: 'programming' },
-    { name: 'Python', level: 88, category: 'programming' },
-    { name: 'OOPs', level: 85, category: 'core' },
-    { name: 'Data Structures', level: 83, category: 'core' },
-    { name: 'Algorithms', level: 80, category: 'core' },
-    { name: 'DBMS', level: 82, category: 'core' },
-    { name: 'Web Development', level: 85, category: 'web' },
-    { name: 'MySQL', level: 80, category: 'web' },
-    { name: 'Machine Learning', level: 78, category: 'ai' },
-    { name: 'Jupyter Notebook', level: 82, category: 'ai' },
-    { name: 'Figma', level: 88, category: 'design' },
-    { name: 'Blender', level: 75, category: 'design' },
-    { name: 'Adobe Tools', level: 80, category: 'design' },
-    { name: 'UI/UX Design', level: 85, category: 'design' },
+    { name: 'C Programming', level: 60, category: 'programming' },
+    { name: 'C++', level: 70, category: 'programming' },
+    { name: 'Java', level: 50, category: 'programming' },
+    { name: 'Python', level: 75, category: 'programming' },
+    { name: 'OOPs', level: 50, category: 'core' },
+    { name: 'Data Structures', level: 50, category: 'core' },
+    { name: 'Algorithms', level: 50, category: 'core' },
+    { name: 'DBMS', level: 40, category: 'core' },
+    { name: 'Web Development', level: 80, category: 'web' },
+    { name: 'MySQL', level: 60, category: 'web' },
+    { name: 'Machine Learning', level: 50, category: 'ai' },
+    { name: 'Figma', level: 80, category: 'design' },
+    { name: 'Blender', level: 50, category: 'design' },
+    { name: 'UI/UX Design', level: 55, category: 'design' },
   ];
 
   const categories = [

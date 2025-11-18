@@ -22,15 +22,32 @@ export function Projects() {
       url: 'https://vigneshwaransp.github.io/Z.I.A/',
     },
     {
-      title: 'Spider verse UI',
+      title: 'Humanoid Jarvis',
       description:
-        'Futuristic cyberpunk-themed portfolio with holographic effects, GSAP animations, and neon aesthetics set in the year 2050.',
+        'Created with imagination and inspired with React',
       tech: ['React', 'TailwindCSS', 'GSAP', 'Framer Motion'],
       year: '2025',
       status: 'active',
-      // no URL (or you may add one later)
+      url: 'https://nexus-spline-view.lovable.app/',
     },
-    
+    {
+      title: '3D SPLINE',
+      description:
+        'Immervise 3D website created using spline.',
+      tech: ['spline'],
+      year: '2025',
+      status: 'active',
+      url: 'https://my.spline.design/distortingtypography-CbfolX5I4kk3Rxyw57sFyV6Z/',
+    },
+    {
+      title: 'E-Dictionary',
+      description:
+        'E-dictionary which display meaning of word precisely.',
+      tech: ['react','Orchids AI'],
+      year: '2025',
+      status: 'active',
+      url: 'https://aura-robot-website.vercel.app/',
+    },
   ];
 
   return (

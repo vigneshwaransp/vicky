@@ -54,10 +54,10 @@ export function Hero() {
     if (!ctx) return;
 
     const letters = '0123456789';
-    const fontSize = 5;
+    const fontSize = 4;
     let columns = Math.floor(window.innerWidth / fontSize);
     const drops = Array(columns).fill(1);
-    const colors = ['#00BFFF', '#FF0033']; // Blue & Red
+    const colors = ['#ff0000ff', '#ff4400ff']; // Blue & Red
 
     const draw = () => {
       ctx.fillStyle = 'rgba(0,0,0,0.1)'; // trail effect
@@ -210,7 +210,7 @@ export function Hero() {
           <div className="relative holographic p-1 rounded-lg overflow-hidden">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <img
-                src="https://i.pinimg.com/736x/f5/c0/60/f5c060dbf05df89cbd5b5d0cd3a34cac.jpg"
+                src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="VICKY"
                 className="w-full h-full object-cover"
               />
