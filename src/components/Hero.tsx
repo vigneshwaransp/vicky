@@ -210,14 +210,14 @@ export function Hero() {
           <div className="relative holographic p-1 rounded-lg overflow-hidden">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <img
-                src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://i.pinimg.com/originals/af/62/4d/af624dd16c5af8806d9572f0a870a187.jpg"
                 alt="VICKY"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#00BFFF]/20 via-transparent to-[#FF0033]/20 mix-blend-overlay" />
               <motion.div
                 className="absolute inset-0 h-1"
-                style={{ background: 'linear-gradient(90deg, transparent, #00BFFF, transparent)', boxShadow: '0 0 20px #00BFFF' }}
+                style={{ background: 'linear-gradient(90deg, transparent, #ff1500, transparent)', boxShadow: '0 0 20px #ff0000' }}
                 animate={{ y: [0, 400] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
               />
@@ -226,8 +226,9 @@ export function Hero() {
               <div className="absolute bottom-2 left-2 w-8 h-8 border-b-2 border-l-2 border-[#FF0033]" />
               <div className="absolute bottom-2 right-2 w-8 h-8 border-b-2 border-r-2 border-[#FF0033]" />
             </div>
-            <div className="absolute -inset-4 bg-[#00BFFF]/20 blur-3xl -z-10" />
-            <div className="absolute -inset-4 bg-[#FF0033]/10 blur-3xl -z-10" />
+            <div className="absolute -inset-4 bg-[#FF0033]/40 blur-3xl -z-10" />
+            <div className="absolute -inset-6 bg-[#FF0033]/20 blur-3xl -z-10" />
+
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }} className="mt-6 p-4 holographic">
               <div className="flex items-center justify-between text-sm font-mono">

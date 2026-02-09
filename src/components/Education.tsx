@@ -24,7 +24,7 @@ export function Education() {
       degree: 'B.E Computer Science and Engineering',
       institution: 'Bannari Amman Institute of Technology',
       duration: '2024 – 2028',
-      score: 'CGPA: 8.25 / 10',
+      score: 'CGPA: 8.1 / 10',
       icon: GraduationCap,
       color: '#00BFFF',
     },

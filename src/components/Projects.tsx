@@ -15,39 +15,83 @@ export function Projects() {
     {
       title: 'Z.I.A (Chat Bot)',
       description:
-        'AI chatbot project combining Python and Machine Learning to simulate human interaction with data-driven responses and natural language processing.',
-      tech: ['Python', 'Machine Learning', 'NLP', 'AI'],
+        'AI chatbot project combining Html and API calls to simulate human interaction with data-driven responses and natural language processing.',
+      tech: ['HTML','API CALLS','CSS'],
       year: '2024',
       status: 'completed',
       url: 'https://vigneshwaransp.github.io/Z.I.A/',
     },
-    {
-      title: 'Humanoid Jarvis',
+     {
+      title: 'TrendSpotter (Opal)',
       description:
-        'Created with imagination and inspired with React',
-      tech: ['React', 'TailwindCSS', 'GSAP', 'Framer Motion'],
+        'opal is a google labs product that helps to build apps',
+      tech: ['GOOGLE LABS','AUTOMATION','OPAL'],
       year: '2025',
-      status: 'active',
-      url: 'https://nexus-spline-view.lovable.app/',
+      status: 'completed',
+      url: 'https://opal.google/?flow=drive:/1YLeAcQNcf4B6WRxNukLrE1__BYgt1L95&shared&mode=app',
     },
     {
-      title: '3D SPLINE',
+      title: 'Image Analyzer (OCR)',
       description:
-        'Immervise 3D website created using spline.',
-      tech: ['spline'],
+        'Optical Character Recognition tool for analyzing images',
+      tech: ['OCR','REACT','LINDY AI'],
       year: '2025',
-      status: 'active',
-      url: 'https://my.spline.design/distortingtypography-CbfolX5I4kk3Rxyw57sFyV6Z/',
+      status: 'completed',
+      url: 'https://image-analyzer-2.lindy.site/',
     },
     {
-      title: 'E-Dictionary',
+      title: 'karnan (AI Assistant)',
       description:
-        'E-dictionary which display meaning of word precisely.',
-      tech: ['react','Orchids AI'],
+        'karnan is an AI assistant built using html and css , the core core concept of karna is MCP server and client architecture',
+      tech: ['MCP','HTML','SONNET 4.5'],
       year: '2025',
-      status: 'active',
+      status: 'completed',
+      url: 'https://claude.ai/public/artifacts/b8f43de7-83d8-4c98-b233-0b1b3b416777',
+    },
+    {
+      title: 'PS Monitor (Process Monitoring Tool)',
+      description:
+        'PS Monitor is a process monitoring tool built using react and node js , the core concept of PS Monitor is to monitor the system processes and display the information in a user-friendly way',
+      tech: ['REACT','NODE JS','PROCESS MONITORING'],
+      year: '2025',
+      status: 'completed',
+      url: 'https://grf.lovable.app/',
+    },
+    {
+      title: 'TANKER (Deployment warehouse)',
+      description:
+        'TANKER is a deployment warehouse built using react and node js , the core concept of TANKER is to gather deployed the applications in a user-friendly way',
+      tech: ['REACT','NODE JS','DEPLOYMENT'],
+      year: '2025',
+      status: 'completed',
+      url: 'https://v0-tanker-website-redesign.vercel.app/',
+    },
+    {
+      title: 'E-dictionary',
+      description:
+        'E-dictionary is a digital dictionary application that provides definitions, synonyms, and translations for words in multiple languages.',
+      tech: ['REACT','NODE JS','LOVABLE AI'],
+      year: '2025',
+      status: 'completed',
       url: 'https://aura-robot-website.vercel.app/',
     },
+    {
+      title: 'AI Text summarizer',
+      description:
+        'AI Text summarizer is a tool that uses natural language processing to summarize long texts into shorter, more concise versions.',
+      tech: ['HTML','PYTHON'],
+      year: '2025',
+      status: 'completed but not deployed',
+    },
+    {
+      title: 'MULTIMODAL AI',
+      description:
+        'Multimodal AI is an artificial intelligence system that can process and understand multiple types of data, such as text, images, and audio, to provide more comprehensive insights and responses.',
+      tech: ['REACT','PYTHON'],
+      year: '2026',
+      status: 'Working on it',
+    },
+
   ];
 
   return (

@@ -169,7 +169,7 @@ export function About() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: 'CGPA', value: '8.25', color: '#00BFFF' },
+            { label: 'CGPA', value: '8.1', color: '#00BFFF' },
             { label: 'Projects Built', value: '5+', color: '#FF0033' },
             { label: 'Technologies', value: '10+', color: '#00BFFF' },
             { label: 'Learning Mode', value: 'ON', color: '#FF0033' },
