@@ -266,15 +266,4 @@ export function Projects() {
           <motion.button
             className="px-8 py-4 border-2 border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF]/10 transition-all font-['Share_Tech_Mono']"
             whileHover={{
-              scale: 1.05,
-              boxShadow: '0 0 30px rgba(0, 191, 255, 0.4)',
-            }}
-            whileTap={{ scale: 0.95 }}
-          >
-            LOAD_MORE_PROJECTS
-          </motion.button>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+scale: 1.05, boxShadow: '0 0 30px rgba(0, 191, 255, 0.4)', }} whileTap={{ scale: 0.95 }} onClick={() => window.location.href = 'https://goder.lovable.app/'} > CERTIFICATES </motion.button> </motion.div> </div> </section> ); }
